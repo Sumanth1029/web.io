@@ -1,5 +1,6 @@
-@font-face{
-    font-family:"sofachrome";
-    src: url("../fonts/sfc.ttf")  format('truetype');
-
+@font-face {
+ font-family: 'sofachrome';
+ font-weight: normal;
+ font-style: normal;
+ src: url('/fonts/sfc.ttf');
 }
