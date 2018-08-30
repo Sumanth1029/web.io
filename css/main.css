@@ -4,7 +4,11 @@
  font-style: normal;
  src: url('fonts/sfc.ttf');
 }
-.ba{
- background-color: aqua;
- 
+
+#navdiv{
+  background-color: aqua;
+}
+
+#fontcol{
+ font-color:black;
 }
