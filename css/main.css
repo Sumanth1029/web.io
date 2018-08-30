@@ -4,7 +4,6 @@
  font-style: normal;
  src: url('fonts/sfc.ttf');
 }
-
-#id3{
- border: 1px solid;
+.ba{
+ background-color: black;
 }
