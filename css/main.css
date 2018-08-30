@@ -5,6 +5,6 @@
  src: url('fonts/sfc.ttf');
 }
 
-#b{
- backround-color:black;
+#id3{
+ border: 1px solid;
 }
