@@ -12,8 +12,9 @@
 #fontcol{
  font-color:black;
 }
-.navbar-inverse{
- background-color:black;
+.navbar-inverse {
+     background-color: #00000;
+     border-color: #080808;
 }
 .jumbotron{
   background-color:black;
