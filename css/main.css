@@ -9,7 +9,7 @@ ul.nav a:hover { color: aqua !important; }
 
 .parallax {
    
-    min-height: 500px; 
+    min-height: 600px; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
