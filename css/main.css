@@ -4,9 +4,6 @@
  font-style: normal;
  src: url('fonts/sfc.ttf');
 }
-navbar-nav{
- background-color:white;
-}
 
 ul.nav a:hover { color: aqua !important; }
 
