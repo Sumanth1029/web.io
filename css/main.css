@@ -5,19 +5,18 @@
  src: url('fonts/sfc.ttf');
 }
 
-#navdiv{
-  background-color: aqua;
-}
+ul.nav a:hover { color: aqua !important; }
 
-#fontcol{
- font-color:black;
-}
-.navbar-inverse {
-     background-color: #00000;
-     border-color: #080808;
-}
-#back{
- background-color:black;
- color:aqua;
-}
+.parallax {
+    /* The image used */
+   
 
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
