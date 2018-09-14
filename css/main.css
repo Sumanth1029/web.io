@@ -4,14 +4,14 @@
  font-style: normal;
  src: url('fonts/sfc.ttf');
 }
+navbar-nav{
+ background-color:white;
+}
 
 ul.nav a:hover { color: aqua !important; }
 
 .parallax {
-    /* The image used */
    
-
-    /* Set a specific height */
     min-height: 500px; 
 
     /* Create the parallax scrolling effect */
