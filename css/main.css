@@ -8,13 +8,7 @@
 ul.nav a:hover { color: aqua !important; }
 
 .parallax {
-    /* The image used */
-   
-
-    /* Set a specific height */
     min-height: 600px; 
-
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -22,5 +16,5 @@ ul.nav a:hover { color: aqua !important; }
 }
 #vector_dark{
     max-width: 100%;
-  height: auto;
+    height: auto;
 }
