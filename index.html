@@ -5,6 +5,15 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script type="text/javascript">
+  AOS.init();
+</script>
+
 <script> 
 $(document).ready(function(){
        var div = $("#id1");  
@@ -16,7 +25,7 @@ $(document).ready(function(){
         div.animate({fontSize: '3em'}, "slow");
     
     
-   
+    var window_height = $window.height();
     
 	});
 	
@@ -29,71 +38,54 @@ $(document).ready(function(){
 
 </head>
 <body>
-	
     <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: black;">
-	    
   <div class="container-fluid">
-	  
-	  
     <div class="navbar-header">
       <button type="button" class="navbar-toggle blue" style="background-color:#2f96ef;" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
       </button>
-      <a class="navbar-brand" style="width:400px;height:auto;font-family:sofachrome;padding-top:10px;font-size: 2em;color:#2f96ef;">VIVRT MOTORS</a>
+      <a class="navbar-brand" style="width:400px;
+						    height:auto;
+						    font-family:sofachrome;
+						    padding-top:10px;
+                            font-size: 2em;
+						    color:#2f96ef;">VIVRT MOTORS</a>
     </div>
-	 
-	  
     <div class="collapse navbar-collapse hov" id="myNavbar">
       <ul class="nav navbar-nav ">
         <li><a href="https://vivrtmotors.com">Home</a></li>
         <li><a href="https://vivrtmotors.com/our-story.html">Company Array</a></li>
         <li><a href="https://vivrtmotors.com/career.html">Career</a></li> 
         <li><a href="https://vivrtmotors.com/achievements.html">Achievements</a></li> 
-        <li><a href="https://vivrtmotors.com/achievements.html#contactussection">Contact</a></li> 
+          <li><a href="https://vivrtmotors.com/achievements.html#contactussection">Contact</a></li> 
       </ul>
+      
     </div>
-	  
   </div>
-	    
 </nav>
  
-    
-	
-	<div class="parallax">
+    <div class="parallax">
 
-        <iframe width="100%" height="600px" style="margin-top: 50px;z-index: 1;position:fixed;"src="https://www.youtube.com/embed/yHx22Gvhtdc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe width="100%" height="768px" style="margin-top: 50px;z-index: 0;position:fixed;"src="https://www.youtube.com/embed/yHx22Gvhtdc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
     
-	</div>
-	
-	
-	
+    <div style="height:1000px;background-color:black;color: aliceblue; font-size:36px;position: absolute;width: 100%">
+<center>
     
-   
-	<div style="height:1000px;background-color:black;color: aliceblue; font-size:36px;z-index: 3;position: absolute;width: 100%">
-
-		
-		<center>
+    <br>
+    <br>
+    <br>
     
-			<br>
     
-			<br>
+    <div id="img_logo" >
+    <img src="vector_dark.png" id="vector_dark">
+    </div>
     
-			<br>
     
-			<div >
-    
-				<img src="vector_dark.png" id="vector_dark">
-    
-			</div>
-        
-		</center>
-		
-		
-
-	</div>
-	
+        </center>
+</div>
     </body>
     
 </html>
