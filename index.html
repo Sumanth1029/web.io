@@ -3,58 +3,37 @@
 <head>
     <title>SKATO-CROSS</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
     <script type="text/javascript">
-  AOS.init();
+ 
 </script>
 
-<script> 
-$(document).ready(function(){
-       var div = $("#id1");  
-        div.animate({left: '100px'}, "slow");
-        div.animate({fontSize: '3em'}, "slow");
-	
-	var div = $("#id2");  
-        div.animate({left: '415px'}, "slow");
-        div.animate({fontSize: '3em'}, "slow");
-    
-    
-    var window_height = $window.height();
-    
-	});
-	
-</script> 
+
    <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: black;">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle blue" style="background-color:#2f96ef;" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span> 
-      </button>
+    
+  <div >
+    
+      
+         
+     
       <a class="navbar-brand" style="width:400px;
 						    height:auto;
 						    font-family:sofachrome;
 						    padding-top:10px;
-                            font-size: 2em;
+                            font-size: 3em;
 						    color:#2f96ef;">VIVRT MOTORS</a>
-    </div>
-    <div class="collapse navbar-collapse hov" id="myNavbar">
-      <ul class="nav navbar-nav ">
+  
+ 
+      <ul class="main-nav">
         <li><a href="https://vivrtmotors.com">Home</a></li>
         <li><a href="https://vivrtmotors.com/our-story.html">Company Array</a></li>
         <li><a href="https://vivrtmotors.com/career.html">Career</a></li> 
@@ -62,14 +41,13 @@ $(document).ready(function(){
           <li><a href="https://vivrtmotors.com/achievements.html#contactussection">Contact</a></li> 
       </ul>
       
-    </div>
+   
   </div>
-</nav>
- 
-    <div class="parallax">
 
-        <iframe width="100%" height="768px" style="margin-top: 50px;z-index: 0;position:fixed;"src="https://www.youtube.com/embed/yHx22Gvhtdc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
+ 
+    
+    <div class="content1">
+    <iframe width="100%" height="768px" style="margin-top: 0px;"src="https://www.youtube.com/embed/yHx22Gvhtdc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
     
     <div style="height:1000px;background-color:black;color: aliceblue; font-size:36px;position: absolute;width: 100%">
 <center>
@@ -79,13 +57,47 @@ $(document).ready(function(){
     <br>
     
     
-    <div id="img_logo" >
-    <img src="vector_dark.png" id="vector_dark">
+    <div class="about hidden" >
+       
+    <img src="vector_dark.png" id="vector_dark" >
     </div>
+    
+    
+    
+    
+    
+    
     
     
         </center>
 </div>
+      
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+            
+           
+        (function() { 
+                var aboutEl = $('div.about'),
+                    aboutElOffset = 500,
+                    documentEl = $(document);
+                window.console.log(documentEl.scrollTop());
+                documentEl.on('scroll', function() {
+                    if ( documentEl.scrollTop() > aboutElOffset){
+                         if ( documentEl.scrollTop() > aboutElOffset+600){
+                             if( !aboutEl.hasClass('hidden') )
+                                 aboutEl.addClass('hidden')
+                                 
+                         }else{
+                             aboutEl.removeClass('hidden');
+                         }
+                    } else{
+                        aboutEl.addClass('hidden')
+                    }
+                });               
+            })();
+   
+        </script>
+        
     </body>
     
 </html>
