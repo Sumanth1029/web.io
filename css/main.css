@@ -6,7 +6,6 @@
 }
 
 
-
 .parallax {
     min-height: 768px; 
     background-attachment: fixed;
@@ -14,10 +13,13 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
 #vector_dark{
     max-width: 100%;
     height: auto;
 }
+
             body {
                 
                 background-color: black;
@@ -25,8 +27,8 @@
             
             .content1 {
                 height: 768px;
-                background-color: #e0e0e0;
-             background-color: black;
+                margin-top: 0px;
+                background-color: black;
             }
             
             .about {
@@ -44,32 +46,28 @@
                 opacity: 0;
                 transform: translate3d(0, 0, -100px) ;
             }
-.main-nav{
-            float:right;
-            list-style: none;
-     background-color: black;
-    margin-top: 0px;
-    
-    
-            
+            nav li{
+                padding: 5px;
+                margin-left: 20px;
+                color: white;
+            }
+             
         
-        }
-        .main-nav li{
+        
+        nav li{
             display: inline;
               background-color: black;
         }
-        .main-nav li a{
-            color:white;
+        nav li a{
+            
             text-decoration: none;
             padding:5px 20px;
             font-family: sans-serif;
             font-size: 15px;
             transition: all 0.25s ease-in
         }
-        .main-nav li.active a{
-            border: 1px solid white;
-        }
-        .main-nav li a:hover{
+       
+        nav li a:hover{
           font-size: 18px;
             color: aqua !important; 
             transition: all 0.25s ease-in;
@@ -77,7 +75,7 @@
             border-radius: 25px;
         
         }
-.row{
+        .row{
             max-width: 1500px;
             margin: auto;
         }
