@@ -46,13 +46,31 @@
                 transform-style: preserve-3d;
                 transform: perspective(800px);
             }
+
+            
            
             .about img {
-                transition: all 1s ease 0.25s;
+                transition: all 1s ease 0.65s;
             }
             .about.hidden img {
                 opacity: 0;
                 transform: translate3d(0, 0, -100px) ;
+            }
+
+.about h1{
+    transition: all 1s ease 0s;
+}
+ .about.hidden h1{
+                opacity: 0;
+                transform: translate3d(0, 0, -100px) ;
+            }
+
+.about P{
+    transition: all 1s ease 0.9s;
+}
+ .about.hidden P{
+                opacity: 0;
+                transform: translate3d(0, 100px, 400px) ;
             }
             nav li{
                 padding: 5px;
