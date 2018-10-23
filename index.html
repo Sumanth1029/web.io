@@ -65,7 +65,14 @@
                 
                 <p style="font-family: sofachrome;font-size: 30px;color:#2f96ef" id="name">SKATOCROSS</p>
                 
-               
+                
+                
+               <div class="row" style="margin-top: 150px">
+                   <div class="col-sm-1"></div>
+                <div class="col-sm-5 left hidden_left">Flexibility of a <br> <span style="font-size: 36px;">SKATEBOARD</span></div>
+                   <div class="col-sm-5 right hidden_right">Speed and performance of a <br><span style="font-size: 36px; ">MOTORCYCLE</span></div>
+                   <div class="col-sm-1"></div>                  
+                </div>
 
 			</div>
 
@@ -85,17 +92,13 @@
                 documentEl.on('scroll', function() {
                      window.console.log(documentEl.scrollTop());
                     if ( documentEl.scrollTop() > blockOffset){
-                         if ( documentEl.scrollTop() > blockOffset+650){
-                             if( !block.hasClass('hidden') )
-                                 block.addClass('hidden')
-                                 
+                             block.removeClass('hidden');   
                          }else{
-                             block.removeClass('hidden');
-                             
-                             
+                             block.addClass('hidden');
                          }
-                    } else{
-                        block.addClass('hidden')
+                    if(documentEl.scrollTop() > 896){
+                        
+                        }
                     }
                 });               
             });
@@ -104,12 +107,7 @@
     
     
     
-    <div>
     
-    
-    
-    
-    </div>
     </body>
 
 </html>
