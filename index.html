@@ -97,7 +97,8 @@
                              block.addClass('hidden');
                          }
                     if(documentEl.scrollTop() > 896){
-                        
+                        if(block.hasClass('hidden_left')){
+                            block.removeClass('hidden_left');
                         }
                     }
                 });               
