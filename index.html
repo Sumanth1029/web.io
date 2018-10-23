@@ -64,6 +64,8 @@
 				<img src="vector_dark.png" id="vector_dark">
                 
                 <p style="font-family: sofachrome;font-size: 30px;color:#2f96ef" id="name">SKATOCROSS</p>
+                
+               
 
 			</div>
 
@@ -81,6 +83,7 @@
                     documentEl = $(document);
                 window.console.log(documentEl.scrollTop());
                 documentEl.on('scroll', function() {
+                     window.console.log(documentEl.scrollTop());
                     if ( documentEl.scrollTop() > blockOffset){
                          if ( documentEl.scrollTop() > blockOffset+650){
                              if( !block.hasClass('hidden') )
@@ -95,7 +98,7 @@
                         block.addClass('hidden')
                     }
                 });               
-            })();
+            });
    
         </script>
     
