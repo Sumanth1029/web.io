@@ -52,7 +52,8 @@
 
     
 
-	<div style="height:1700px;background-color:black; color: aliceblue ;z-index: 1;position: absolute;width:100%">
+	<div style="height:1700px;
+                max-width: 100%; background-color:black ;z-index: 1;position: absolute;" class="container">
 
 		<center>
             
@@ -97,10 +98,10 @@
                              block.addClass('hidden');
                          }
                     if(documentEl.scrollTop() > 900){
-                                  $('#left').animate({left: '500px',opacity:'1'},500);   
+                                  $('#left').animate({left: '50px',opacity:'1'},500);   
                     }
                     if(documentEl.scrollTop() > 920){
-                        $('#right').delay(800).animate({right: '600px',opacity:'1'},500);
+                        $('#right').delay(800).animate({right: '50px',opacity:'1'},500);
                     }
                     
                 });               
