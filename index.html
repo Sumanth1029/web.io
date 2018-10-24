@@ -69,8 +69,8 @@
                 
                <div class="row" style="margin-top: 150px">
                    <div class="col-sm-1"></div>
-                <div class="col-sm-5 left hidden_left">Flexibility of a <br> <span style="font-size: 36px;">SKATEBOARD</span></div>
-                   <div class="col-sm-5 right hidden_right">Speed and performance of a <br><span style="font-size: 36px; ">MOTORCYCLE</span></div>
+                <div class="col-sm-5 left hidden_left" id="left">Flexibility of a <br> <span style="font-size: 46px;">SKATEBOARD</span></div>
+                   <div class="col-sm-5 right hidden_right" id="right">Speed and performance of a <br><span style="font-size: 46px; ">MOTORCYCLE</span></div>
                    <div class="col-sm-1"></div>                  
                 </div>
 
@@ -96,11 +96,13 @@
                          }else{
                              block.addClass('hidden');
                          }
-                    if(documentEl.scrollTop() > 896){
-                        if(block.hasClass('hidden_left')){
-                            block.removeClass('hidden_left');
-                        }
+                    if(documentEl.scrollTop() > 900){
+                                  $('#left').animate({left: '500px',opacity:'1'},500);   
                     }
+                    if(documentEl.scrollTop() > 920){
+                        $('#right').delay(800).animate({right: '600px',opacity:'1'},500);
+                    }
+                    
                 });               
             });
    
