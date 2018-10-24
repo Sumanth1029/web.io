@@ -97,7 +97,8 @@
    
     background-color: black;
     color: #2f96ef;
-    transition: all 0.15s ease-in;
+    transform: translate3d( -500px,0,0);
+    opacity: 0;
    
 }
 
@@ -113,10 +114,11 @@
      transition: all 0.25s ease-in;
 }
 .right{
-   
+       transform: translate3d( 600px,0,0);
+
     background-color: black;
     color: #2f96ef;
-    transition: all 0.15s ease-in;
+   
 }
 
 
@@ -146,7 +148,7 @@
        
         nav li a:hover{
           font-size: 18px;
-            color: aqua !important; 
+            color: #ff6a00 !important; 
             transition: all 0.25s ease-in;
             
         
