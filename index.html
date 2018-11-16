@@ -52,7 +52,7 @@
 
     
 
-	<div style="height:1700px;
+	<div style="height:3000px;
                 max-width: 100%; background-color:black ;z-index: 1;position: absolute;" class="container">
 
 		<center>
@@ -70,14 +70,40 @@
                 
                <div class="row" style="margin-top: 150px">
                    <div class="col-sm-1"></div>
-                <div class="col-sm-5 left hidden_left" id="left">Flexibility of a <br> <span style="font-size: 46px;">SKATEBOARD</span></div>
-                   <div class="col-sm-5 right hidden_right" id="right">Speed and performance of a <br><span style="font-size: 46px; ">MOTORCYCLE</span></div>
+                <div class="col-sm-5 left " id="left">Flexibility of a <br> <span style="font-size: 46px;">SKATEBOARD</span></div>
+                   <div class="col-sm-5 right " id="right">Speed and performance of a <br><span style="font-size: 46px; ">MOTORCYCLE</span></div>
                    <div class="col-sm-1"></div>                  
                 </div>
 
 			</div>
+            
+            <div style="font-family:sans-serif;font-size: 18px;color:#ff6a00" class="down div2" id="div2" >
+            <p>The concept emerged from the thought of having the flexibility of Skateboard and speed of Motorcycle in one unique product, thus SKATOCROSS was invented.</p>
+            </div>
+            </center>
+        
+        <br><br>
+        
+            
+            <div style="font-family:sans-serif;font-size: 18px;color:wheat;width:50%;float: left;margin: 20px;" >
+                <p>Discover the legacy of generations of automobile enthusiasts, tinkerers, and innovators who have surrounded us, touched our minds, working in small garages and home workshops; daring to chase their passion, indifferent of greasy hands or faces, working frugal and smart without any compromises to craftsmanship. VIVRT motors is a tribute to those grass root motor enthusiasts who were before us and a challenge to the fresh blood, to build a legacy like the masters of old.</p></div>
 
-		</center>
+        <div style="font-family:sans-serif;font-size: 18px;color:wheat;width:50%;float: right;margin: 20px;" >
+            <p>What started with a simple thought experiment has fueled and powered us to build our first product and a company around it. VIVRT Motors is the embodiment of the path of discovery and craving for adventure within all of us. We sincerely believe that the path we have taken aids those adventurers and wanderers seeking to go beyond the conventional means to explore the world around them.</p></div>
+
+
+        <div style="font-family:sans-serif;font-size: 18px;color:wheat;width:50%;float: left;margin: 20px;" >
+            <p>In a nation filled with youth looking for their need for speed and thrill, there are not many options available to them in the recreational and off-road motor sporting space. Instead of creating a competing product, we at VIVRT are working towards developing innovative and novel automotive solutions to fuel our customers need for speed, thrill, and serenity. Products not just for those inducted into speed but even those who wish to explore a new dimension of automotive excellence.</p></div>
+        
+        <div style="font-family:sans-serif;font-size: 18px;color:wheat;width:50%;float: right;margin: 20px;" >
+<p>In the ancient language of Sanskrit "VIVRT"(Viv-Rt) means "Discovery", and at VIVRT Motors, creating a sense of discovery is the fundamental objective of our products.</p>
+
+            <p>Fundamental Objective is to enable our customers to discover the joy and adventure, of exploring their surrounding in a novel, thrilling and safe manner, with our innovative product line of automotive solutions for recreation and motorsports. The products at VIVRT motors, are innovative, quirky and made for speed; thrilling and engrossing the riders into a brand-new experience, an experience of a rediscovery of the self and a craving for more.</p></div>
+            
+            
+            
+
+		
         
 	</div>
 
@@ -87,12 +113,11 @@
     
         $(document).ready(function() { 
                 var block = $('div.about'),
-                    blockOffset = 500,
                     documentEl = $(document);
                 window.console.log(documentEl.scrollTop());
                 documentEl.on('scroll', function() {
                      window.console.log(documentEl.scrollTop());
-                    if ( documentEl.scrollTop() > blockOffset){
+                    if ( documentEl.scrollTop() > 500){
                              block.removeClass('hidden');   
                          }else{
                              block.addClass('hidden');
@@ -102,8 +127,9 @@
                     }
                     if(documentEl.scrollTop() > 920){
                         $('#right').delay(800).animate({right: '50px',opacity:'1'},500);
-                    }
-                    
+                        $('#div2').delay(1400).animate({slideUp: '0px',opacity:'1'},500);
+
+                    } 
                 });               
             });
    
