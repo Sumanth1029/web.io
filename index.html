@@ -85,24 +85,23 @@
         <br><br>
         
             
-            <div style="font-family:sans-serif;font-size: 18px;color:wheat;width:50%;float: left;margin: 20px;" >
+            <div style="font-family:sans-serif;font-size: 18px;color:wheat;width:50%;float: left;margin: 20px;position: relative" class="down" id="div3" >
                 <p>Discover the legacy of generations of automobile enthusiasts, tinkerers, and innovators who have surrounded us, touched our minds, working in small garages and home workshops; daring to chase their passion, indifferent of greasy hands or faces, working frugal and smart without any compromises to craftsmanship. VIVRT motors is a tribute to those grass root motor enthusiasts who were before us and a challenge to the fresh blood, to build a legacy like the masters of old.</p></div>
 
-        <div style="font-family:sans-serif;font-size: 18px;color:wheat;width:50%;float: right;margin: 20px;" >
+        <div style="font-family:sans-serif;font-size: 18px;color:wheat;width:50%;float: right;margin: 20px;" id="div4" class="down">
             <p>What started with a simple thought experiment has fueled and powered us to build our first product and a company around it. VIVRT Motors is the embodiment of the path of discovery and craving for adventure within all of us. We sincerely believe that the path we have taken aids those adventurers and wanderers seeking to go beyond the conventional means to explore the world around them.</p></div>
 
 
-        <div style="font-family:sans-serif;font-size: 18px;color:wheat;width:50%;float: left;margin: 20px;" >
+        <div style="font-family:sans-serif;font-size: 18px;color:wheat;width:50%;float: left;margin: 20px;" id="div5" class="down">
             <p>In a nation filled with youth looking for their need for speed and thrill, there are not many options available to them in the recreational and off-road motor sporting space. Instead of creating a competing product, we at VIVRT are working towards developing innovative and novel automotive solutions to fuel our customers need for speed, thrill, and serenity. Products not just for those inducted into speed but even those who wish to explore a new dimension of automotive excellence.</p></div>
         
-        <div style="font-family:sans-serif;font-size: 18px;color:wheat;width:50%;float: right;margin: 20px;" >
+        <div style="font-family:sans-serif;font-size: 18px;color:wheat;width:50%;float: right;margin: 20px;" id="div6" class="down">
 <p>In the ancient language of Sanskrit "VIVRT"(Viv-Rt) means "Discovery", and at VIVRT Motors, creating a sense of discovery is the fundamental objective of our products.</p>
 
             <p>Fundamental Objective is to enable our customers to discover the joy and adventure, of exploring their surrounding in a novel, thrilling and safe manner, with our innovative product line of automotive solutions for recreation and motorsports. The products at VIVRT motors, are innovative, quirky and made for speed; thrilling and engrossing the riders into a brand-new experience, an experience of a rediscovery of the self and a craving for more.</p></div>
             
-            
-            
-
+        
+       
 		
         
 	</div>
@@ -128,8 +127,15 @@
                     if(documentEl.scrollTop() > 920){
                         $('#right').delay(800).animate({right: '50px',opacity:'1'},500);
                         $('#div2').delay(1400).animate({slideUp: '0px',opacity:'1'},500);
-
-                    } 
+                    } if(documentEl.scrollTop() > 1144){
+                        $('#div3').delay(400).animate({slideUp: '0px',opacity:'1'},700);
+                    }if(documentEl.scrollTop() > 1254){
+                        $('#div4').delay(400).animate({slideUp: '0px',opacity:'1'},700);
+                    }if(documentEl.scrollTop() > 1554){
+                        $('#div5').delay(400).animate({slideUp: '0px',opacity:'1'},700);
+                    }if(documentEl.scrollTop() > 1848){
+                        $('#div6').delay(400).animate({slideUp: '0px',opacity:'1'},700);
+                    }
                 });               
             });
    
