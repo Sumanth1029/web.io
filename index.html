@@ -2,7 +2,7 @@
 <head>
     <title>SKATO-CROSS</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -33,6 +33,9 @@
       </li>  
          <li class="nav-item">
         <a class="nav-link" href="https://vivrtmotors.com/achievements.html#contactussection">Contact</a>
+      </li>  
+         <li class="nav-item">
+        <a class="nav-link" href="cart.html">Shop</a>
       </li>  
     </ul>
   </div>  
@@ -77,7 +80,7 @@
 
 			</div>
             
-            <div style="font-family:sans-serif;font-size: 18px;color:#ff6a00" class="down div2" id="div2" >
+            <div style="font-family:sans-serif;font-size: 18px;color:#ff6a00" class="down" id="div2" >
             <p>The concept emerged from the thought of having the flexibility of Skateboard and speed of Motorcycle in one unique product, thus SKATOCROSS was invented.</p>
             </div>
             </center>
@@ -126,15 +129,19 @@
                     }
                     if(documentEl.scrollTop() > 920){
                         $('#right').delay(800).animate({right: '50px',opacity:'1'},500);
-                        $('#div2').delay(1400).animate({slideUp: '0px',opacity:'1'},500);
-                    } if(documentEl.scrollTop() > 1144){
-                        $('#div3').delay(400).animate({slideUp: '0px',opacity:'1'},700);
-                    }if(documentEl.scrollTop() > 1254){
-                        $('#div4').delay(400).animate({slideUp: '0px',opacity:'1'},700);
-                    }if(documentEl.scrollTop() > 1554){
-                        $('#div5').delay(400).animate({slideUp: '0px',opacity:'1'},700);
-                    }if(documentEl.scrollTop() > 1848){
-                        $('#div6').delay(400).animate({slideUp: '0px',opacity:'1'},700);
+                        $('#div2').delay(1400).animate({slideUp: '1px',opacity:'1'},500);
+                    } 
+                    if(documentEl.scrollTop() > 1144){
+                        $('#div3').delay(400).animate({slideUp: '1px',opacity:'1'},700);
+                    }
+                    if(documentEl.scrollTop() > 1254){
+                        $('#div4').delay(400).animate({slideUp: '1px',opacity:'1'},700);
+                    }
+                    if(documentEl.scrollTop() > 1554){
+                        $('#div5').delay(400).animate({slideUp: '1px',opacity:'1'},700);
+                    }
+                    if(documentEl.scrollTop() > 1848){
+                        $('#div6').delay(400).animate({slideUp: '1px',opacity:'1'},700);
                     }
                 });               
             });
