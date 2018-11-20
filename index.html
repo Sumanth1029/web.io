@@ -55,7 +55,7 @@
 
     
 
-	<div style="height:3000px;
+	<div style="height:auto;
                 max-width: 100%; background-color:black ;z-index: 1;position: absolute;" class="container">
 
 		<center>
@@ -139,9 +139,8 @@
                     }
                     if(documentEl.scrollTop() > 1554){
                         $('#div5').delay(400).animate({slideUp: '1px',opacity:'1'},700);
-                    }
-                    if(documentEl.scrollTop() > 1848){
-                        $('#div6').delay(400).animate({slideUp: '1px',opacity:'1'},700);
+                    
+                        $('#div6').delay(400).animate({slideUp: '1px',opacity:'1'},1000);
                     }
                 });               
             });
